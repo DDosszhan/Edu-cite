@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#scroll-bottom-container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.carousel-caption {
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; 
+}
+
+.flashcard {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    height: 99%;
+}
+.difficulty {
+    color: #f39c12; 
+}
+
+
+.flashcard img {
+    object-fit: cover;
+    height: 70%; 
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+
+  #myModal {
+    text-align: center;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+  

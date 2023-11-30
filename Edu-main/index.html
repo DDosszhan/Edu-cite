@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="Css.css">
+    
+    <audio id="modeChangeSound">
+        <source src="sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+        
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/android-chrome-512x512.png" alt="icon" width="50"
+                    height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a class="nav-link" href="courses.html">Courses</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" id="toggleDarkMode" onclick="playModeChangeSound()">
+                            <a class="nav-link" href="#">Change Mode</a>
+                        </button>
+                    
+                    </li>
+
+                    <button type="button" class="btn">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">About us</a></li>
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="social-networks.html">Social Networks</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+            
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to our Educational Platform</h1>
+    
+     
+        <div id="educationCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+    
+         
+            <div class="carousel-item active">
+              <img src="https://avatars.mds.yandex.net/i?id=57fde7faadc803218c343d425c4db158_l-5334840-images-thumbs&n=13" class="d-block w-100" alt="Image 1" width="500" height="700">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Explore Diverse Subjects</h5>
+                <p>Our platform offers a wide range of subjects, from humanities to sciences, ensuring a comprehensive learning experience.</p>
+              </div>
+            </div>
+    
+          
+            <div class="carousel-item">
+              <img src="https://img.lovepik.com/photo/50062/1409.jpg_wh860.jpg" class="d-block w-100" alt="Image 2" width="500" height="700">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Interactive Learning Resources</h5>
+                <p>Engage with interactive content, quizzes, and multimedia resources designed to enhance your understanding of the topics.</p>
+              </div>
+            </div>
+    
+            <div class="carousel-item">
+              <img src="https://researched.org.uk/wp-content/uploads/2020/03/best-in-class.jpg" class="d-block w-100" alt="Image 3" width="500" height="700">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Expert Instructors</h5>
+                <p>Learn from experienced and knowledgeable instructors who are passionate about sharing their expertise and helping you succeed.</p>
+              </div>
+            </div>
+    
+          </div>
+    
+          <a class="carousel-control-prev" href="#educationCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#educationCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    
+      </div>
+
+
+
+
+      <div class="container mt-5" id="animated-text">
+        <h1 class="text-center mb-4">The Birth of Edu</h1>
+        <div id="text-container">
+          <p>Once upon a time in a bustling city, a group of dedicated educators and tech enthusiasts gathered with a shared vision - to make quality education accessible to everyone...</p>
+          <p>Countless hours were spent coding, designing, and fine-tuning the platform. The developers embraced the power of technology to create a seamless and responsive user interface...</p>
+          <p>As the project took shape, the team decided to incorporate Bootstrap, a versatile front-end framework, to enhance the website's aesthetics and responsiveness. Bootstrap's grid system, components, and utilities proved invaluable in crafting a visually appealing and user-friendly interface...</p>
+          <p>After months of hard work and collaboration, "Edu" was ready to be unveiled to the world. The website boasted a clean design, intuitive navigation, and a plethora of educational resources ranging from video lectures to interactive quizzes...</p>
+          <p>Users could explore various subjects, track their progress, and connect with a community of learners. "Edu" quickly gained popularity, reaching students and educators globally...</p>
+          <p>The team celebrated their success, knowing that they had made a meaningful impact on the world of online education. As "Edu" continued to grow, the team remained dedicated to their mission of making quality education accessible to all...</p>
+        </div>
+      </div>
+    
+
+
+    <br><br><br><br><br>
+    <div class="container-fluid fixed-bottom bg-dark text-white p-3">
+        <a href="https://astanait.edu.kz/" class="nav-link">made in AITU</a>
+    </div>
+
+
+
+
+    <script src="JavaScript.js"></script>
+    
+    
+</body>
+
+</html>

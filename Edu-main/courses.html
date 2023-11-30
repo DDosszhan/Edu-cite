@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="Css.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <audio id="modeChangeSound">
+        <source src="sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/android-chrome-512x512.png" alt="icon" width="50"
+                    height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a class="nav-link" href="courses.html">Courses</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" id="toggleDarkMode" onclick="playModeChangeSound()">
+                            <a class="nav-link" href="#">Change Mode</a>
+                        </button>
+                    </li>
+
+                    <button type="button" class="btn">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">About us</a></li>
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="social-networks.html">Social Networks</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course1">
+                    <img src="https://avatars.mds.yandex.net/i?id=b9496ac9a752bdb7264bfdf88c65b612_l-4011124-images-thumbs&n=13" alt="" class="img-fluid">
+                    <br>
+                    <h4>Introduction to Web Development</h4>
+                    <p>Description: A beginner-friendly course covering HTML, CSS, and JavaScript.</p>
+                    <p>Difficulty: <span class="difficulty">★★☆☆☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course2">
+                    <img src="https://avatars.mds.yandex.net/i?id=480f0602ba42916c6a04339aae13cbae_l-9699538-images-thumbs&n=13" alt="" class="img-fluid">
+                    <br>
+                    <h4>Advanced JavaScript Concepts</h4>
+                    <p>Description: Dive deeper with advanced topics like closures and async programming.</p>
+                    <p>Difficulty: <span class="difficulty">★★★☆☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course3">
+                    <img src="https://avatars.mds.yandex.net/i?id=765a9e7d24b5adc963a32d9c77447cf8_l-4055778-images-thumbs&n=13" alt="" class="img-fluid">
+                    <br>
+                    <h4>Data Science with Python</h4>
+                    <p>Description: Learn data analysis and machine learning using Python and popular libraries.</p>
+                    <p>Difficulty: <span class="difficulty">★★★★☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course4">
+                    <img src="https://hellowebbooks.com/static/images/hwd/mockup.jpg" alt="" class="img-fluid">
+                    <br>
+                    <h4>Web Design Fundamentals</h4>
+                    <p>Description: Learn the basics of web design, including UI/UX principles and design tools.</p>
+                    <p>Difficulty: <span class="difficulty">★★☆☆☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course5">
+                    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1592885021646/nhr9Pnk6f.png" alt="" class="img-fluid">
+                    <br>
+                    <h4>Mobile App Development with React Native</h4>
+                    <p>Description: Build mobile apps using React Native for both iOS and Android platforms.</p>
+                    <p>Difficulty: <span class="difficulty">★★★★★</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course6">
+                    <img src="https://i.stack.imgur.com/9BOYx.jpg" alt="" class="img-fluid">
+                    <br>
+                    <h4>Database Management with SQL</h4>
+                    <p>Description: Master the fundamentals of database management and SQL queries.</p>
+                    <p>Difficulty: <span class="difficulty">★★★☆☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course7">
+                    <img src="https://i.pinimg.com/originals/ff/49/c6/ff49c6b5522862c14793bd9f5c7feba3.png" alt="" class="img-fluid">
+                    <br>
+                    <h4>Full Stack Web Development</h4>
+                    <p>Description: Dive into full-stack development with a focus on both front-end and back-end technologies.</p>
+                    <p>Difficulty: <span class="difficulty">★★☆☆☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course8">
+                    <img src="https://edu-cisco.org/wp-content/uploads/2021/03/cybersecurity-essentials-99.jpg" alt="" class="img-fluid">
+                    <br>
+                    <h4>Cybersecurity Essentials</h4>
+                    <p>Description: Learn essential concepts and practices in cybersecurity to secure digital assets.</p>
+                    <p>Difficulty: <span class="difficulty">★★★★☆</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 flashcard-container">
+                <div class="flashcard animated" id="course9">
+                    <img src="https://miro.medium.com/v2/resize:fit:1200/format:jpg/1*cG6U1qstYDijh9bPL42e-Q.jpeg" alt="" class="img-fluid">
+                    <br>
+                    <h4>Introduction to Machine Learning</h4>
+                    <p>Description: Explore the basics of machine learning and its applications in various fields.</p>
+                    <p>Difficulty: <span class="difficulty">★★★☆☆</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <div class="container-fluid fixed-bottom bg-dark text-white p-3">
+        <a href="https://astanait.edu.kz/" class="nav-link">made in AITU</a>
+    </div>
+
+    <script src="javacourses.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</body>
+
+</html>
